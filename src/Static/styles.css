@@ -1,0 +1,94 @@
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+  --header-height: 4.5rem;
+  /* colors */
+  --hue: 23;
+  --hue-arthou: 35;
+  --base-color: hsl(var(--hue) 63% 27%);
+  --Arthou-color: hsl(var(--hue-arthou) 88% 71%);
+}
+
+/*====  BASE ============================ */
+h1 {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+#Arthou-Header-Font {
+  color: var(--Arthou-color);
+  font-size: 1.5rem;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-flex;
+  height: 3.44rem;
+  width: 8.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.125rem;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+}
+
+/*====  LAYOUT ============================ */
+.header-flex {
+  background-color: var(--base-color);
+  height: 5.5rem;
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 2.5rem;
+  height: 5.5rem;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+.container-1-logo {
+  flex-basis: 23.66rem;
+  font-size: 1.5rem;
+  font: 700 1.875rem 'Poppins', sans-serif;
+}
+.container-1-logo span {
+  color: hsl(var(--hue-arthou) 88% 71%);
+}
+.container-2 {
+  flex-basis: 34.75rem;
+  text-align: center;
+}
+.container-2 a {
+  color: white;
+}
+.container-2 a:nth-child(n + 1):nth-child(-n + 3) {
+  margin-right: 4.375rem;
+}
+.container-3 {
+  flex-basis: 26.44rem;
+  text-align: right;
+}
