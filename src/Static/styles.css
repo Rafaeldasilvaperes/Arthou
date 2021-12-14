@@ -1,3 +1,6 @@
+/*====  FONTS ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 /*====  RESET ============================ */
 * {
   margin: 0;
@@ -22,8 +25,12 @@ img {
   /* colors */
   --hue: 23;
   --hue-arthou: 35;
+  --hue-main: 34;
+  --hue-shadow: 34;
   --base-color: hsl(var(--hue) 63% 27%);
   --Arthou-color: hsl(var(--hue-arthou) 88% 71%);
+  --hue-main-bg: hsl(var(--hue-main) 71% 53%);
+  --hue-shadow-img: hsl(var(--hue-shadow) 70% 39%);
 }
 
 /*====  BASE ============================ */
@@ -76,7 +83,7 @@ h1 {
   font: 700 1.875rem 'Poppins', sans-serif;
 }
 .container-1-logo span {
-  color: hsl(var(--hue-arthou) 88% 71%);
+  color: var(--Arthou-color);
 }
 .container-2 {
   flex-basis: 34.75rem;
@@ -91,4 +98,77 @@ h1 {
 .container-3 {
   flex-basis: 26.44rem;
   text-align: right;
+}
+
+/*==== HOME BODY ============================ */
+.section-main{
+  height: 100vh;
+  margin: 0;
+  background-color: var(--hue-main-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-main .image{
+  flex-basis: 3;
+  width: 32.94rem;
+  height: 35.8125rem;
+  margin-top: 7.56rem;
+  margin-left: 5.1rem;
+  z-index: 100;
+}
+.section-main .image::before {
+  content: '';
+  width: 32.94rem;
+  height: 35.8125rem;
+  background: var(--hue-shadow-img);
+  position: absolute;
+  margin-top: -2.94rem;
+  margin-left:3.62rem ;
+  border-radius: .625rem;
+  z-index: -1;
+}
+
+.section-main .image img{
+  width: 32.94rem;
+  height: 35.8125rem;
+  border-radius: .625rem;
+  z-index: 100;
+}
+.section-main .text{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 10.75rem;
+  margin-right: 5.1rem;
+ 
+  
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  flex-basis: 26.38rem;
+  height: 23.20rem;
+}
+.text h1{
+  font-size: 3.5rem;
+}
+.text p{
+  font-size: 1.25rem;
+  text-align: left;
+  line-height: 140%;
+  
+}
+.text span{
+  color: var(--Arthou-color);
+}
+.section-main .text .button-main{
+  background-color: var(--base-color);
+  width: 13.56rem;
+  font-size: 1.3rem;
+}
+
+.image{
+  flex-basis: 25rem;
 }
