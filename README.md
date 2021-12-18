@@ -8,3 +8,5 @@ The First Goal is to build the front-end part of a website meant to be an eComme
 
 ![Arthou Main Page](https://github.com/Rafaeldasilvaperes/Arthou/blob/main/wireframe/arthou_index.png)
 
+<br><hr>
+
