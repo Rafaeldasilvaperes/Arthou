@@ -47,6 +47,10 @@ h1 {
   margin-left: 0;
   font-weight: bold;
 }
+#brush{
+  display:none;
+
+}
 
 .button {
   display: inline-flex;
@@ -83,10 +87,37 @@ h1 {
   flex-basis: 23.66rem;
   font-size: 1.5rem;
   font: 700 1.875rem 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
 }
 .container-1-logo span {
   color: var(--Arthou-color);
+  cursor: pointer;
 }
+.brush{
+  display: none;
+}
+
+.dropdown-child{
+  padding: 10px;
+  max-width: 200px;
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  background-color: var(--base-color);
+  text-align: center;
+  border: 2px solid #F5F5F5;
+}
+.dropdown-child a{
+  font-size: 1.5rem;
+  display: block;
+  line-height: 3rem;
+  border-radius: 10px;
+}
+.dropdown-child a:hover{
+  background-color: hsl(var(--hue-shadow) 70% 39%);
+}
+
 .container-2 {
   flex-basis: 34.75rem;
   text-align: center;
@@ -170,6 +201,27 @@ h1 {
   font-size: 1.3rem;
 }
 
+.footer-main{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 1%;
+}
+.footer-main a, li{
+  list-style: none;
+  color: white;
+}
+.references{
+
+}
+.Link-References{
+
+}
+
+
+
 /*Fazer MEDIA queries para todo o código*/
 @media only screen and (max-width: 1480px){ 
   /*====  LAYOUT ============================ */
@@ -200,6 +252,28 @@ h1 {
   }
   .text p{
     font-size: 1.5rem;
+  }
+
+  .brush{
+    display: inline-block;
+  }
+  .container-1-logo:hover .brush{
+
+    animation: in 2s;
+    width: 100px;
+    transform: rotate(498deg);
+    transition: transform 1.5s, width 1.5s;
+  }
+  .container-1-logo .brush{
+    animation: out 1s;
+    width: 100px;
+  }
+  @keyframes out {
+    0%   { -webkit-transform: rotate(498deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+  .container-1-logo:hover .dropdown-child{
+    display: block;
   }
 }
 
