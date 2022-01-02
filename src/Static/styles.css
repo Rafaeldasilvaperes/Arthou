@@ -258,12 +258,14 @@ h1 {
   border-radius: 0.4125rem;
   box-shadow: 1.8125rem -1.8125rem var(--hue-shadow-img);
 }
+.image-signup{
+  width: 28.9375rem;
+}
 .image-signup img{
   width: 28.9375rem;
   height: 44.875rem;
   border-radius: 0.4125rem 0 0 0.4125rem;
 }
-
 .text-signup{
   min-width: 31.8125rem;
   height: 44.875rem;
@@ -306,10 +308,7 @@ h1 {
   font-size: 2.25rem;
   padding-left: 0;
 }
-.image-signup{
-  background-color: green;
-  width: 28.9375rem;
-}
+
 
 
 
