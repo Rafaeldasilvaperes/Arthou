@@ -1,0 +1,76 @@
+.header-flex {
+  
+  background-color: var(--base-color);
+  height: 5.5rem;
+  position:fixed;
+  width: 100vw;
+  z-index: 200;
+}
+
+.container-nav {
+  box-shadow: -10px 5px 10px hsla(var(--hue-shadow), 70%, 39%, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 2.5rem;
+  height: 5.5rem;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+}
+.container-1-logo {
+  flex-basis: 23.66rem;
+  font-size: 1.5rem;
+  font: 700 1.875rem 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+}
+.container-1-logo span {
+  color: var(--Arthou-color);
+  cursor: pointer;
+}
+.brush{
+  display: none;
+}
+
+.dropdown-child{
+  padding: 10px;
+  max-width: 200px;
+  min-width: 200px;
+  position: absolute;
+  display: none;
+  background-color: var(--base-color);
+  text-align: center;
+  border: 2px solid #F5F5F5;
+}
+.dropdown-child a{
+  font-size: 1.5rem;
+  display: block;
+  line-height: 3rem;
+  border-radius: 10px;
+}
+.dropdown-child a:hover{
+  background-color: hsl(var(--hue-shadow) 70% 39%);
+  color: white;
+}
+
+.container-2 {
+  flex-basis: 34.75rem;
+  text-align: center;
+}
+.container-2 a {
+  color: white;
+}
+.container-2 a:hover {
+  font-size: 1.55rem;
+}
+
+.container-2 a:nth-child(n + 1):nth-child(-n + 3) {
+  margin-right: 4.375rem;
+}
+.container-3 {
+  flex-basis: 26.44rem;
+  text-align: right;
+}

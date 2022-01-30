@@ -1,4 +1,4 @@
-/*====  FONTS ============================ */
+/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /*====  RESET ============================ */
@@ -84,7 +84,7 @@ h1 {
 }
 
 /*====  LAYOUT ============================ */
-.header-flex {
+/* .header-flex {
   
   background-color: var(--base-color);
   height: 5.5rem;
@@ -159,7 +159,7 @@ h1 {
 .container-3 {
   flex-basis: 26.44rem;
   text-align: right;
-}
+} */
 
 /*==== HOME BODY ============================ */
 .section-main{
