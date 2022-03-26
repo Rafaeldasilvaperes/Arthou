@@ -1,0 +1,45 @@
+<section class="section-main">
+  <div class="container-signup">
+    <div class="image-signup">
+      <img src="assets/img/Anna Painting 1.jpg" alt="Painting of a young girl holding a babe and a mug">
+    </div>
+    <div class="text-signup">
+      <!-- <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+      <h2>Sign up for free!</h2>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="John Johnson" ngModel><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="your@email.com" ngModel><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="*****" ngModel><br><br>
+
+        <label for="social_name">Social Name:</label><br>
+        <input type="text" id="social_name" name="social_name" placeholder="Jonny 'The Big' Johnson" ngModel><br><br>
+
+        <input class="button register-btn" type="submit" value="Start the Free Trial" (click)="navigateToProductCreate()"> -->
+
+        <form>
+          <h2>Sign up for free!</h2>
+    
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" [(ngModel)]="register.name" name="name" placeholder="John Johnson" ><br>
+    
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" [(ngModel)]="register.email" name="email" placeholder="your@email.com"><br><br>
+    
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" [(ngModel)]="register.password" name="password" placeholder="*****" ><br><br>
+    
+            <label for="social_name">Social Name:</label><br>
+            <input type="text" id="social_name" [(ngModel)]="register.social_name" name="social_name" placeholder="Jonny 'The Big' Johnson" ><br><br>
+    
+            <input class="button register-btn" type="submit" value="Start the Free Trial" (click)="createRegister()">
+        <!-- <input class="button register-btn" type="submit" value="Start the Free Trial"> -->
+      </form> 
+    </div>
+
+    </div>
+  </section>

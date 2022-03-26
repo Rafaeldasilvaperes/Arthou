@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  height: 3.44rem;
+  width: 8.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.125rem;
+  border-radius: 0.25rem;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+}
+.button:hover{
+  background-color: black;
+}

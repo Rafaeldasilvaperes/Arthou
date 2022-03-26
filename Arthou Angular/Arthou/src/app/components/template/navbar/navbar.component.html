@@ -1,7 +1,7 @@
 <header class="header-flex">
   <nav class="container-nav">
     <div class="container-1-logo">
-      <a href="#"
+      <a routerLink="/"
         ><span>Ar</span>thou<span class="brush"></span></a>
       <div class="dropdown-child">
         <a href="#">Explore</a><br />
@@ -10,14 +10,15 @@
       </div>
     </div>
     <div class="container-2">
-      <a href="index.html" id="Arthou-Header-Font">Arthou</a>
+      <a routerLink="/" id="Arthou-Header-Font">Arthou</a>
       <a href="#">Explore</a>
       <a href="#">New here?</a>
       <a href="#">About Us</a>
     </div>
     <div class="container-3">
       <a href="#">Log in</a>
-      <a href="register.html" class="button">Sing up</a>
+      <a routerLink="/register" class="button">Sing up</a>
     </div>
   </nav>
 </header>
+<router-outlet></router-outlet>
