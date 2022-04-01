@@ -9,7 +9,9 @@ import { RegisterComponent } from './view/register/register.component';
 
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
-import { RegisteredComponent } from './view/register/registered/registered.component'
+import { LoginComponent } from './view/login/login.component';
+
+
 
 
 @NgModule({
@@ -18,7 +20,7 @@ import { RegisteredComponent } from './view/register/registered/registered.compo
     NavbarComponent,
     HomeComponent,
     RegisterComponent,
-    RegisteredComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,

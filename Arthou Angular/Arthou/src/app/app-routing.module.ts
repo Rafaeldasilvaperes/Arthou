@@ -1,4 +1,4 @@
-import { RegisteredComponent } from './view/register/registered/registered.component';
+import { LoginComponent } from './view/login/login.component';
 import { RegisterComponent } from './view/register/register.component';
 import { HomeComponent } from './view/home/home.component';
 import { NgModule, Component } from '@angular/core';
@@ -16,9 +16,9 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: "registered",
-    component: RegisteredComponent
-  }
+    path: "login",
+    component: LoginComponent
+  },
 
 
 

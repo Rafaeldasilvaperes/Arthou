@@ -1,6 +1,5 @@
 import { RegisterService } from './register.service';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
 
 
 import { Register } from './register.model'
@@ -19,7 +18,8 @@ export class RegisterComponent implements OnInit {
     social_name: ''
   }
 
-  
+  registered = false;
+
   /* constructor(private router: Router, private http: HttpClient) { }
   onSubmit(data: any){
     this.http.post('http://localhost:3300', data).subscribe((result) => {
@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
     })
     console.warn(data);
   } */
-  constructor(private registerService: RegisterService, private router: Router) { }
+  constructor(private registerService: RegisterService) { }
   
   
 
@@ -38,15 +38,9 @@ export class RegisterComponent implements OnInit {
   createRegister(){
     this.registerService.create(this.register).subscribe(() => {
       this.registerService.showMessage('You have successfully signed in!')
-      this.router.navigate(['/registered'])
+      this.registered = true;
     })
   }
-
-  navigateToRegistered(): void{
-    
-    
-  }
-
  
 
 }

@@ -87,6 +87,10 @@
   text-align: right;
 }
 
+.container-3 a{
+  cursor: pointer;
+}
+
 /* Verify if I shouldnt have been using this button styles in the global styles.css to avoid copying and paste */
 
 .button {

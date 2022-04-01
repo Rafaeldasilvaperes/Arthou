@@ -21,7 +21,7 @@
 
         <input class="button register-btn" type="submit" value="Start the Free Trial" (click)="navigateToProductCreate()"> -->
 
-        <form>
+        <form *ngIf="!registered">
           <h2>Sign up for free!</h2>
     
             <label for="name">Name:</label><br>
@@ -38,7 +38,24 @@
     
             <input class="button register-btn" type="submit" value="Start the Free Trial" (click)="createRegister()">
         <!-- <input class="button register-btn" type="submit" value="Start the Free Trial"> -->
-      </form> 
+      </form>
+
+      <div *ngIf="registered" class="text-signup text-thanks">
+        <h2>Thanks for Signing up!</h2>
+        <h3>A confirmation email has been sent to you!</h3>
+        <br>
+      <div>
+        <img class="one-red-circle" src="assets/img/Oneredcircle.png" alt="Red notification circle">
+        <div>
+        <img class="image-mail" src="assets/img/mail_sign.png" alt="Image of a mail">
+        </div>
+      </div>
+
+        <p>Now you can start <span>creating your profile page!</span>
+          You can start with a good and expressive description of yourself and your art by clicking <a href="#">here</a>!
+        </p>
+        
+      </div> 
     </div>
 
     </div>
