@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 
 /*====  RESET ============================ */
 html { 
@@ -157,18 +159,7 @@ h1 {
   margin-left: 5.1rem;
   z-index: 100;
 }
-.section-main .image::before {
-  content: '';
-  display: block;
-  width: 32.94rem;
-  height: 35.8125rem;
-  background: var(--hue-shadow-img);
-  position: absolute;
-  margin-top: -2.94rem;
-  margin-left:3.62rem ;
-  border-radius: .625rem;
-  z-index: -1;
-}
+
 
 .section-main .image img{
   display: block;
@@ -212,7 +203,7 @@ h1 {
   background-color: black;
 }
 
-.footer-main{
+/* .footer-main{
   background-color: black;
   
 }
@@ -235,7 +226,7 @@ h1 {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   line-height: 3rem;
   margin: 0;
-}
+} */
 
 /*================ SIGN UP PAGE ================*/
 /*================ SIGN UP PAGE ================*/

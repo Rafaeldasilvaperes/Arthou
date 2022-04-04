@@ -1,4 +1,5 @@
-<header class="header-flex">
+
+<header class="header-flex" id="blur">
   <nav class="container-nav">
     <div class="container-1-logo">
       <a routerLink="/"
@@ -16,9 +17,10 @@
       <a href="#">About Us</a>
     </div>
     <div class="container-3">
-      <a>Log in</a>
+      <a routerLink="/login" (click)="toggle()">Log in</a>
       <a routerLink="/register" class="button">Sing up</a>
     </div>
   </nav>
 </header>
+
 <router-outlet></router-outlet>

@@ -12,7 +12,7 @@
   
   background-color: var(--base-color);
   height: 5.5rem;
-  position:fixed;
+  position: fixed;
   width: 100vw;
   z-index: 200;
 }
@@ -23,7 +23,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  align-items: center;
   color: white;
   padding: 0 2.5rem;
   height: 5.5rem;
@@ -107,3 +106,12 @@
 .button:hover{
   background-color: black;
 }
+
+
+.header-flex#blur.active{
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* body */

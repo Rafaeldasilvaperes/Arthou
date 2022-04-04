@@ -10,7 +10,7 @@ import { RegisterComponent } from './view/register/register.component';
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './view/login/login.component';
-
+import { IonicModule } from '@ionic/angular';
 
 
 
@@ -20,13 +20,16 @@ import { LoginComponent } from './view/login/login.component';
     NavbarComponent,
     HomeComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    IonicModule.forRoot(),
+    
+    
     
   ],
   providers: [

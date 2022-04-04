@@ -12,4 +12,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public toggle(){
+    const blur = document.getElementById('blur')
+    blur?.classList.toggle('active')
+  }
+
 }

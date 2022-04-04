@@ -14,4 +14,55 @@
 .button:hover{
   background-color: black;
 }
+.section-main .image::before {
+  content: '';
+  display: block;
+  width: 32.94rem;
+  height: 35.8125rem;
+  background: var(--hue-shadow-img);
+  position: absolute;
+  margin-top: -2.94rem;
+  margin-left:3.62rem ;
+  border-radius: .625rem;
+  z-index: -1;
+}
 
+
+
+
+
+
+.text{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 10.75rem;
+  margin-right: 5.1rem;
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  flex-basis: 26.38rem;
+  height: 23.20rem;
+}
+.text h1{
+  font-size: 3.5rem;
+}
+.text p{
+  font-size: 1.25rem;
+  text-align: left;
+  line-height: 140%;
+  
+}
+.text span{
+  color: var(--Arthou-color);
+}
+.text .button-main{
+  background-color: var(--base-color);
+  width: 13.56rem;
+  font-size: 1.3rem;
+}
+.text .button-main:hover{
+  background-color: black;
+}

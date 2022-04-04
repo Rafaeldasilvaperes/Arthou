@@ -49,8 +49,9 @@
   box-shadow: 1.8125rem -1.8125rem var(--hue-shadow-img);
 }
 
+
 .image-signup img{
-  width: 33.9375rem; /*28.9375rem*/
+  width: 33.9375rem;
   height: 44.875rem;
   border-radius: 0.4125rem 0 0 0.4125rem;
 }
@@ -80,15 +81,17 @@
   font-size: 1.125rem;
   padding-left: 1rem;
   margin-top: 0.25rem;
-  margin-right: 1rem;
+  font-style: italic;
 }
 .text-signup .register-btn{
   margin: 0;
   margin-top: 2.6875rem;  
   background-color: black;
   color: white;
+  border: none;
+  font-style: normal;
 }
-.register-btn:hover {
+.text-signup .register-btn:hover {
   background-color: var(--base-color);
   color: var(--Arthou-color);
   cursor: pointer;
@@ -97,4 +100,6 @@
 .register-btn value{
   font-size: 2.25rem;
   padding-left: 0;
+  
 }
+
