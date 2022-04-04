@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BlurToggleDirective } from '../../../directives/blur-toggle.directive'
 
 @Component({
   selector: 'app-navbar',
@@ -11,10 +12,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  public toggle(){
-    const blur = document.getElementById('blur')
-    blur?.classList.toggle('active')
-  }
+  
 
 }

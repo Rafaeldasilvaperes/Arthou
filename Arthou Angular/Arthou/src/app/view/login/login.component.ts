@@ -1,7 +1,6 @@
-
-
 import { Component, OnInit } from '@angular/core';
-import { IonToggle } from '@ionic/angular';
+
+ 
 
 
 @Component({
@@ -11,11 +10,13 @@ import { IonToggle } from '@ionic/angular';
 })
 export class LoginComponent implements OnInit {
 
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
+  
+  
   
 }

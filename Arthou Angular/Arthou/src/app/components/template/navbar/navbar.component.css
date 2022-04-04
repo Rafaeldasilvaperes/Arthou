@@ -110,8 +110,8 @@
 
 .header-flex#blur.active{
   filter: blur(2px);
-  pointer-events: none;
-  user-select: none;
+  /* pointer-events: none;
+  user-select: none; */
 }
 
 /* body */
