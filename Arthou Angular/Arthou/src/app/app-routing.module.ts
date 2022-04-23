@@ -1,3 +1,4 @@
+import { AboutusComponent } from './view/aboutus/aboutus.component';
 import { LoginComponent } from './view/login/login.component';
 import { RegisterComponent } from './view/register/register.component';
 import { HomeComponent } from './view/home/home.component';
@@ -19,6 +20,10 @@ const routes: Routes = [
     path: "login",
     component: LoginComponent
   },
+  {
+    path: "aboutus",
+    component: AboutusComponent
+  }
 
 
 

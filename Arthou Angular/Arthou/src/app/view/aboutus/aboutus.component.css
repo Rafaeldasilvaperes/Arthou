@@ -1,0 +1,27 @@
+
+.img-container img{
+  
+  min-width: 99.1vw;
+  height: 40rem;
+  filter: blur(2px);
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus-title h2{
+  font-family: Stalemate;
+  font-size: 10rem;
+  font-weight: 200;
+}
+
+.container-content{
+  display: flex;
+  padding: 4.7rem;
+  background-color: white;
+
+}
+
+.container-content .container-image-text img{
+  width: 33rem;
+  height: 39rem;
+}

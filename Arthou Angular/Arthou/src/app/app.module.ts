@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './view/login/login.component';
 import { IonicModule } from '@ionic/angular';
 import { BlurToggleDirective } from './directives/blur-toggle.directive';
+import { AboutusComponent } from './view/aboutus/aboutus.component';
 
 
 
@@ -23,6 +24,7 @@ import { BlurToggleDirective } from './directives/blur-toggle.directive';
     RegisterComponent,
     LoginComponent,
     BlurToggleDirective,
+    AboutusComponent,
   ],
   imports: [
     BrowserModule,
